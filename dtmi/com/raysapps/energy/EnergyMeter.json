@@ -1,0 +1,20 @@
+{
+  "@context": "dtmi:dtdl:context;3",
+  "@id": "dtmi:com:raysapps:energy:meterapp;1",
+  "@type": "Interface",
+  "displayName": "Thermostat",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Voltage",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "setPointTemp",
+      "writable": true,
+      "schema": "double"
+    }
+  ]
+
+}

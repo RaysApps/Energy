@@ -1,0 +1,19 @@
+{
+ "@context": "dtmi:dtdl:context;3",
+  "@id": "dtmi:com:raysapps:energy:testapp;1",
+  "@type": "Interface",
+  "displayName": "Thermostat",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Temp",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "setPointTemp",
+      "writable": true,
+      "schema": "double"
+    }
+  ]
+}
