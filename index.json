@@ -1,0 +1,14 @@
+{
+  "links": {
+    "self": "index.json"
+  },
+  "models": {
+    "dtmi:com:raysapps:energy:meterapp;1": {
+      "displayName": "Thermostat"
+    },
+    "dtmi:com:raysapps:energy:testapp;1": {
+      "displayName": "TestDevice"
+    }
+  },
+  "version": "1.0"
+}

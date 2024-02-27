@@ -2,7 +2,7 @@
  "@context": "dtmi:dtdl:context;3",
   "@id": "dtmi:com:raysapps:energy:testapp;1",
   "@type": "Interface",
-  "displayName": "Thermostat",
+  "displayName": "TestDevice",
   "contents": [
     {
       "@type": "Telemetry",
