@@ -36,6 +36,7 @@
       "@type": ["Property", "TimeSpan"],
       "name": "TelemetryInterval",
       "schema": "integer",
+      "writable": true,
       "displayName": "Telemetry Interval",
       "description": "Interval at which telemetry data is sent",
       "unit": "second"
