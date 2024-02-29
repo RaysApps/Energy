@@ -1,29 +1,42 @@
 {
- "@context": "dtmi:dtdl:context;3",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ],
   "@id": "dtmi:com:raysapps:energy:testapp;1",
   "@type": "Interface",
   "displayName": "TestDevice",
   "contents": [
     {
       "@type": "Telemetry",
+      "displayName": "TelemetryData",
+      "description": "Telemetry data from the device",
       "name": "Temp",
       "schema": "double"
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "Temperature"],
       "name": "setPointTemp",
+      "displayName": "SetPointTemperature",
+      "description": "Set point temperature for the device",	
       "writable": true,
-      "schema": "double"
+      "schema": "double",
+      "unit": "degreeCelsius"
+      	
+       
     },
     {
       "@type": "Property",
-      "name": "RandomDouble",
+       "name": "RandomDouble",
+      "displayName": "RandomDouble",
+      "description": "Random double value",
       "schema": "double"
     },
     {
-      "@type": "Property",
-      "name": "RandomInteger",
-      "schema": "integer"
+      "@type": ["Property", "TimeSpan"],
+      "name": "TelemetryInterval",
+      "schema": "integer",
+      "unit": "second"
     }
   ]
 }

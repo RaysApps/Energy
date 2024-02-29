@@ -1,5 +1,8 @@
 {
-  "@context": "dtmi:dtdl:context;3",
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ],
   "@id": "dtmi:com:raysapps:energy:meterapp;1",
   "@type": "Interface",
   "displayName": "Thermostat",
